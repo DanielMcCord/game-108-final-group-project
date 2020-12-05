@@ -127,11 +127,17 @@ X: &quot;Reckless MF.&quot;
 New partner &quot;Nero&quot;
 &quot;Let&#39;s see how many more I can add to my body count with you&quot;
 &lt;&lt;/if&gt;&gt;
-[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="574,959" size="100,100">&lt;&lt;if not $has_gun&gt;&gt;\
-	&lt;&lt;set $has_gun = true&gt;&gt;\
+[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="574,959" size="100,100">&lt;&lt;if not $have_gun&gt;&gt;\
+	&lt;&lt;set $have_gun = true&gt;&gt;\
 	&lt;&lt;set $ammo = $ammo + $armory_ammo_pack_size&gt;&gt;\
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="358,956" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="Explosion" tags="" position="580,538" size="100,100">[img[Explosion_Reckless.jpg]]
+</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="358,956" size="100,100">You go to the infirmary.
+
+&lt;&lt;set $medpacks = $medpacks + 2&gt;&gt;\
+
+You currently have $medpacks med-packs.
+
+[[Get more med-packs-&gt;Infirmary]]</tw-passagedata><tw-passagedata pid="7" name="Explosion" tags="" position="580,538" size="100,100">[img[Explosion_Reckless.jpg]]
 [[Next-&gt;Flashback]] </tw-passagedata><tw-passagedata pid="8" name="On mission" tags="" position="774,930" size="100,100">You see an enemy scout in your cross hairs, what do you do?
 
 [[Shoot him in the head-&gt;Pink Mist]]
