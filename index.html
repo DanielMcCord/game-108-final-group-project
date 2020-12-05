@@ -129,9 +129,13 @@ New partner &quot;Nero&quot;
 &lt;&lt;/if&gt;&gt;
 [[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="574,959" size="100,100">&lt;&lt;if not $have_gun&gt;&gt;\
 	&lt;&lt;set $have_gun = true&gt;&gt;\
-	&lt;&lt;set $ammo = $ammo + $armory_ammo_pack_size&gt;&gt;\
+-Soldier working at armory
+&quot;Here is your primary, and your side-arm sir, along with your ammo&quot;
+&lt;&lt;else&gt;&gt;\
+&quot;Not enough ammo for you? It would help if you hit your targets. I thought you were one of our best marksmen.&quot;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="358,956" size="100,100">You go to the infirmary.
+&lt;&lt;set $ammo = $ammo + $armory_ammo_pack_size&gt;&gt;
+[[Go back-&gt;At base]]</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="358,956" size="100,100">You go to the infirmary.
 
 &lt;&lt;set $medpacks = $medpacks + 2&gt;&gt;\
 
