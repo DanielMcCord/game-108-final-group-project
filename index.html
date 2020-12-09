@@ -106,7 +106,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 &lt;&lt;set $ammo to $STARTING_AMMO&gt;&gt;
 &lt;&lt;set $have_gun = false&gt;&gt;
 &lt;&lt;/silently&gt;&gt;\
-[img[Desert.jpg]]
+[img[GME108.png]]
 
 Dave Dawson (Reckless)
 
@@ -128,7 +128,9 @@ X: &quot;Reckless MF.&quot;
 New partner &quot;Nero&quot;
 &quot;Let&#39;s see how many more I can add to my body count with you&quot;
 &lt;&lt;/if&gt;&gt;
-[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="191.3333333333334,915.3333333333334" size="100,100">&lt;&lt;if not $have_gun&gt;&gt;\
+[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="191.3333333333334,915.3333333333334" size="100,100">[img [Armory.jpg]]
+
+&lt;&lt;if not $have_gun&gt;&gt;\
 	&lt;&lt;set $have_gun = true&gt;&gt;\
 -Soldier working at armory
 &quot;Here is your primary, and your side-arm sir, along with your ammo&quot;
@@ -136,7 +138,9 @@ New partner &quot;Nero&quot;
 &quot;Not enough ammo for you? It would help if you hit your targets. I thought you were one of our best marksmen.&quot;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $ammo = $ammo + $armory_ammo_pack_size&gt;&gt;
-[[Go back-&gt;At base]]</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="360.3333333333333,1084.0000000000002" size="100,100">You go to the infirmary.
+[[Go back-&gt;At base]]</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="360.3333333333333,1084.0000000000002" size="100,100">[img [Medical.jpg]]
+
+You go to the infirmary.
 
 &lt;&lt;set $medpacks = $medpacks + 2&gt;&gt;\
 -Medic soldier
