@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Reckless" startnode="13" creator="Twine" creator-version="2.3.9" ifid="BE42A63C-BE77-4CF0-92BF-83573212A5C0" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="460,386" size="100,100">&lt;&lt;silently&gt;&gt;
+	<tw-storydata name="Reckless" startnode="13" creator="Twine" creator-version="2.3.9" ifid="BE42A63C-BE77-4CF0-92BF-83573212A5C0" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="460,386" size="100,100">&lt;&lt;silently&gt;&gt;
 &lt;&lt;set $STARTING_AMMO to 0&gt;&gt;
 &lt;&lt;set $armory_ammo_pack_size = 10&gt;&gt;
 &lt;&lt;set $ammo to $STARTING_AMMO&gt;&gt;
@@ -114,12 +114,12 @@ Mission #748
 
 Desert planet of GME108
 
-[[Next-&gt;Explosion]]</tw-passagedata><tw-passagedata pid="2" name="At base" tags="" position="454.00000000000006,801.6666666666667" size="100,100">[[Go on next mission-&gt;Next Mission]]
+[[Next-&gt;Explosion]]</tw-passagedata><tw-passagedata pid="2" name="At base" tags="" position="454,801" size="100,100">[[Go on next mission-&gt;Next Mission]]
 [[Go to Armory-&gt;Armory]]
-[[Go to Infirmary-&gt;Infirmary]]</tw-passagedata><tw-passagedata pid="3" name="Flashback" tags="page_3" position="455.6666666666667,657.6666666666666" size="100,100">[img[in_combat_saved_by_x]]
+[[Go to Infirmary-&gt;Infirmary]]</tw-passagedata><tw-passagedata pid="3" name="Flashback" tags="page_3" position="455,657" size="100,100">[img[PARTNERGEARpng.png]]
 X: &quot;Reckless MF.&quot;
 
-[[Next-&gt;At base]]</tw-passagedata><tw-passagedata pid="4" name="Next Mission" tags="" position="588.6666666666666,994.6666666666667" size="100,100">&lt;&lt;if not $has_gun&gt;&gt;\
+[[Next-&gt;At base]]</tw-passagedata><tw-passagedata pid="4" name="Next Mission" tags="" position="588,994" size="100,100">&lt;&lt;if not $has_gun&gt;&gt;\
 -Random Soldier
 &quot;You need to get your weapon out of the armory first sir, did you want to hit the enemy with your sword?&quot;
 &lt;&lt;elseif $medpacks == 0&gt;&gt;\
@@ -128,7 +128,7 @@ X: &quot;Reckless MF.&quot;
 New partner &quot;Nero&quot;
 &quot;Let&#39;s see how many more I can add to my body count with you&quot;
 &lt;&lt;/if&gt;&gt;
-[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="191.3333333333334,915.3333333333334" size="100,100">[img [Armory.jpg]]
+[[Next-&gt;On mission]]</tw-passagedata><tw-passagedata pid="5" name="Armory" tags="" position="191,915" size="100,100">[img [Armory.jpg]]
 
 &lt;&lt;if not $have_gun&gt;&gt;\
 	&lt;&lt;set $have_gun = true&gt;&gt;\
@@ -138,7 +138,7 @@ New partner &quot;Nero&quot;
 &quot;Not enough ammo for you? It would help if you hit your targets. I thought you were one of our best marksmen.&quot;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $ammo = $ammo + $armory_ammo_pack_size&gt;&gt;
-[[Go back-&gt;At base]]</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="360.3333333333333,1084.0000000000002" size="100,100">[img [Medical.jpg]]
+[[Go back-&gt;At base]]</tw-passagedata><tw-passagedata pid="6" name="Infirmary" tags="" position="360,1084" size="100,100">[img [Medical.jpg]]
 
 You go to the infirmary.
 
@@ -148,12 +148,12 @@ You go to the infirmary.
 
 You currently have $medpacks med-packs.
 
-[[Get more med-packs-&gt;Infirmary]]</tw-passagedata><tw-passagedata pid="7" name="Explosion" tags="" position="457.33333333333337,526" size="100,100">[img[Explosion_Reckless.jpg]]
-[[Next-&gt;Flashback]] </tw-passagedata><tw-passagedata pid="8" name="On mission" tags="" position="589.6666666666666,1144.6666666666667" size="100,100">You see an enemy scout in your cross hairs, what do you do?
+[[Get more med-packs-&gt;Infirmary]]</tw-passagedata><tw-passagedata pid="7" name="Explosion" tags="" position="457,526" size="100,100">[img[Explosion_Reckless.jpg]]
+[[Next-&gt;Flashback]] </tw-passagedata><tw-passagedata pid="8" name="On mission" tags="" position="589,1144" size="100,100">You see an enemy scout in your cross hairs, what do you do?
 
 [[Shoot him in the head-&gt;Pink Mist]]
 [[Shoot his weapon-&gt;Pink Mist]]
-[[Shoot his hands to disable him-&gt;Pink Mist]]</tw-passagedata><tw-passagedata pid="9" name="Nero" tags="" position="799.6666666666666,1258.3333333333333" size="100,100">You&#39;re starting to get the feeling like this guy is a little sadistic
+[[Shoot his hands to disable him-&gt;Pink Mist]]</tw-passagedata><tw-passagedata pid="9" name="Nero" tags="" position="799,1258" size="100,100">You&#39;re starting to get the feeling like this guy is a little sadistic
 
 -Reckless:
 
@@ -166,19 +166,19 @@ You currently have $medpacks med-packs.
 
 
 [[Shoot Nero]]
-[[Continue on with the mission]]</tw-passagedata><tw-passagedata pid="10" name="Shoot Nero" tags="" position="724.6666666666666,1408.3333333333333" size="100,100">Nero, quickly shoots the pistol from your hand and shoots you in the chest. He then drags your presumed corpse to the edge of a cliff nearby.
+[[Continue on with the mission]]</tw-passagedata><tw-passagedata pid="10" name="Shoot Nero" tags="" position="724,1408" size="100,100">Nero, quickly shoots the pistol from your hand and shoots you in the chest. He then drags your presumed corpse to the edge of a cliff nearby.
 
 -Nero
 
 &quot;Nothing personal Dave, orders from Parliament. You just know too much apparently&quot;
 
-[[Next-&gt;As you fall over the cliff]]</tw-passagedata><tw-passagedata pid="11" name="Continue on with the mission" tags="" position="874.6666666666665,1408.3333333333333" size="100,100">As you walk away towards the objective, Nero shoots you in the back and drags your presumed corpse to the edge of a cliff nearby.
+[[Next-&gt;As you fall over the cliff]]</tw-passagedata><tw-passagedata pid="11" name="Continue on with the mission" tags="" position="874,1408" size="100,100">As you walk away towards the objective, Nero shoots you in the back and drags your presumed corpse to the edge of a cliff nearby.
 
 -Nero
 
 &quot;Nothing personal Dave, orders from Parliament. You just know too much apparently&quot;
 
-[[Next-&gt;As you fall over the cliff]]</tw-passagedata><tw-passagedata pid="12" name="As you fall over the cliff" tags="" position="792.6666666666666,1572.3333333333333" size="100,100">As you fall over the cliff
+[[Next-&gt;As you fall over the cliff]]</tw-passagedata><tw-passagedata pid="12" name="As you fall over the cliff" tags="" position="792,1572" size="100,100">As you fall over the cliff
 
 -Reckless
 &quot;My name is Reckless&quot; cough cough
@@ -187,15 +187,15 @@ You currently have $medpacks med-packs.
 &lt;h2&gt;[[Start]]&lt;/h2&gt;
 Story - Timothy Kim
 Programming - Daniel McCord
-Artwork - Carson Tacker &amp; Trevor McGee</tw-passagedata><tw-passagedata pid="14" name="Pink Mist" tags="" position="799.6666666666666,1105.3333333333333" size="100,100">You hear a shot ring out, and it didn&#39;t come from your rifle.
+Artwork - Carson Tacker &amp; Trevor McGee</tw-passagedata><tw-passagedata pid="14" name="Pink Mist" tags="" position="799,1105" size="100,100">You hear a shot ring out, and it didn&#39;t come from your rifle.
 
 In your crosshairs you see a pink mist and a memory where once the scout stood.
 
-[[Next-&gt;Nero]]</tw-passagedata><tw-passagedata pid="15" name="Rescued" tags="" position="995.6666666666667,1625.3333333333333" size="100,100">X pulls Reckless from the river
+[[Next-&gt;Nero]]</tw-passagedata><tw-passagedata pid="15" name="Rescued" tags="" position="995,1625" size="100,100">X pulls Reckless from the river
 
-[[Next-&gt;Escape]]</tw-passagedata><tw-passagedata pid="16" name="Escape" tags="" position="995.6666666666667,1775.3333333333333" size="100,100">X takes Reckless&#39;s unconscious body to an Ice Planet
+[[Next-&gt;Escape]]</tw-passagedata><tw-passagedata pid="16" name="Escape" tags="" position="995,1775" size="100,100">X takes Reckless&#39;s unconscious body to an Ice Planet
 
-[[Next-&gt;Realization]]</tw-passagedata><tw-passagedata pid="17" name="Realization" tags="" position="800.6666666666666,1793.3333333333333" size="100,100">X nurses Reckless back to health
+[[Next-&gt;Realization]]</tw-passagedata><tw-passagedata pid="17" name="Realization" tags="" position="800,1793" size="100,100">X nurses Reckless back to health
 Shoves Country Captain Chicken into Reckless&#39; mouth
 
 -X:
@@ -223,29 +223,29 @@ Shoves Country Captain Chicken into Reckless&#39; mouth
 (Whispering to Reckless)
 &quot;I didn&#39;t know either&quot;
 
-[[Fight Nero]]</tw-passagedata><tw-passagedata pid="19" name="Fight Nero" tags="" position="983.3333333333334,1968.3333333333333" size="100,100">You attempt to fight Nero, but Nero kicks you in the face and off a cliff while effortlessly capturing X in a [[giant net-&gt;In the net]].</tw-passagedata><tw-passagedata pid="20" name="In the net" tags="" position="983.3333333333334,2118.333333333333" size="100,100">-X:
+[[Fight Nero]]</tw-passagedata><tw-passagedata pid="19" name="Fight Nero" tags="" position="983,1968" size="100,100">You attempt to fight Nero, but Nero kicks you in the face and off a cliff while effortlessly capturing X in a [[giant net-&gt;In the net]].</tw-passagedata><tw-passagedata pid="20" name="In the net" tags="" position="983,2118" size="100,100">-X:
 &quot;Is this Hemp?&quot;
 
-[[Next-&gt;X taken]]</tw-passagedata><tw-passagedata pid="21" name="X taken" tags="" position="983.3333333333334,2268.333333333333" size="100,100">Nero takes X back to Parliament
+[[Next-&gt;X taken]]</tw-passagedata><tw-passagedata pid="21" name="X taken" tags="" position="983,2268" size="100,100">Nero takes X back to Parliament
 
 Reckless is in pursuit, secretly
 
 -Reckless:
 &quot;Give me back my X&quot;
 
-[[Next-&gt;Back at Parliament]]</tw-passagedata><tw-passagedata pid="22" name="Back at Parliament" tags="" position="983.3333333333334,2418.333333333333" size="100,100">X is being tortured by Nero as Reckless is watching from outside the window planning his next move
+[[Next-&gt;Back at Parliament]]</tw-passagedata><tw-passagedata pid="22" name="Back at Parliament" tags="" position="983,2418" size="100,100">X is being tortured by Nero as Reckless is watching from outside the window planning his next move
 
 [[No time to plan, rush in-&gt;Rush in]]
 
-[[Sit and think]]</tw-passagedata><tw-passagedata pid="23" name="Rush in" tags="" position="966.6666666666667,2563.333333333333" size="100,100">Reckless Screams his name as he lunges towards Nero with a sword he found outside on the windowsill
+[[Sit and think]]</tw-passagedata><tw-passagedata pid="23" name="Rush in" tags="" position="966,2563" size="100,100">Reckless Screams his name as he lunges towards Nero with a sword he found outside on the windowsill
 
 -Reckless:
 &quot;Myyyy nnnaaammmee iiisss RRREEECCKKLLEESSS!!!!
 
-[[Next-&gt;Nero dies]]</tw-passagedata><tw-passagedata pid="24" name="Sit and think" tags="" position="1141.6666666666667,2461.6666666666665" size="100,100">-Reckless:
+[[Next-&gt;Nero dies]]</tw-passagedata><tw-passagedata pid="24" name="Sit and think" tags="" position="1141,2461" size="100,100">-Reckless:
 &quot;If you put the hammer in the elevator and press up, the elevator goes up. But the elevator is not worthy...?&quot;
 
-[[Rush in]]</tw-passagedata><tw-passagedata pid="25" name="Nero dies" tags="" position="966.6666666666667,2713.333333333333" size="100,100">Reckless trips on a loose floorboard as he falls his sword hits Nero square in the chest and kills him
+[[Rush in]]</tw-passagedata><tw-passagedata pid="25" name="Nero dies" tags="" position="966,2713" size="100,100">Reckless trips on a loose floorboard as he falls his sword hits Nero square in the chest and kills him
 
 -X:
 &quot;That was easy&quot;
@@ -262,12 +262,12 @@ Reckless is in pursuit, secretly
 -X:
 &quot;Nope, I&#39;m done now. Just leave me to die too&quot;
 
-[[Next-&gt;Jailbreak]]</tw-passagedata><tw-passagedata pid="26" name="Jailbreak" tags="" position="966.6666666666667,2863.333333333333" size="100,100">Reckless releases X from his cage/trap thing
+[[Next-&gt;Jailbreak]]</tw-passagedata><tw-passagedata pid="26" name="Jailbreak" tags="" position="966,2863" size="100,100">Reckless releases X from his cage/trap thing
 
 -Reckless:
 &quot;Shut-up before I really leave you&quot;
 
-[[Next-&gt;Asking the real questions]]</tw-passagedata><tw-passagedata pid="27" name="Asking the real questions" tags="" position="1140.6666666666667,2894.333333333333" size="100,100">X points to a pile of explosives in the corner
+[[Next-&gt;Asking the real questions]]</tw-passagedata><tw-passagedata pid="27" name="Asking the real questions" tags="" position="1140,2894" size="100,100">X points to a pile of explosives in the corner
 
 -Reckless:
 &quot;How was he going to torture you with that?&quot;
@@ -275,7 +275,7 @@ Reckless is in pursuit, secretly
 -X:
 &quot;He wasn&#39;t very bright&quot;
 
-[[Next-&gt;Fin]]</tw-passagedata><tw-passagedata pid="28" name="Fin" tags="" position="1140.6666666666667,3044.333333333333" size="100,100">Reckless and X set a timer for the explosives and blow up the parliament building with the people running parliament inside it. It was 2:00 on a tuesday so everyone was there working. They never gave any thought to the innocent people inside, just collateral damage. Not to mention the mess, who is going to clean it all up? Why not go through a judicial process and get them indicted instead of blowing up a whole building?
+[[Next-&gt;Fin]]</tw-passagedata><tw-passagedata pid="28" name="Fin" tags="" position="1140,3044" size="100,100">Reckless and X set a timer for the explosives and blow up the parliament building with the people running parliament inside it. It was 2:00 on a tuesday so everyone was there working. They never gave any thought to the innocent people inside, just collateral damage. Not to mention the mess, who is going to clean it all up? Why not go through a judicial process and get them indicted instead of blowing up a whole building?
 
 THE END</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
